@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100%;
+            height: 100vh;
+            background-color: #212121;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        .principal{
+            width: 300px;
+            height: 50px;
+            display: flex;
+            flex-flow: row wrap;
+            align-items: center;
+        }
+        .principal__first{
+            flex: 1;
+            min-width: 50px;
+            height: 100%;
+            background-color: gold;
+            cursor: context-menu;
+            background-image: url('https://img.icons8.com/ios-glyphs/480/000000/instagram-new.png');
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            transition: ease-in-out 300ms all;
+        }
+        .principal__second{
+            flex: 4;
+            min-width: 250px;
+            height: 100%;
+            background-color: blueviolet;
+            text-align: center;
+            line-height: 50px;
+            font-family: sans-serif;
+            font-weight: bolder;
+            letter-spacing: 5px;
+            font-size: 20px;
+            color: #fff;
+            cursor: context-menu;
+            transition: ease-in-out 300ms all;
+        }
+        .principal__second:hover{
+            color: #212121;
+        }
+
+    </style>
+</head>
+<body>
+    <main class="container">
+        <div class="principal">
+            <div class="principal__first"></div>
+            <div class="principal__second">alexmoreira</div>
+        </div>
+    </main>
+</body>
+</html>

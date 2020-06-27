@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            border: 0;
+            margin: 0;
+            padding: 0;
+            background-color: none;
+            outline: 0;
+            box-sizing: border-box;
+            font-family: monospace;
+        }
+        body{
+            padding: 20px;
+            width: 100%;
+            min-height: 100vh;
+            background-image: linear-gradient(to left, #649173, #DBD5A4);
+        }
+        h2{
+            margin: 15px 0;
+        }
+        .formulaAll{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: flex-start;
+        }
+        .formulaAll input{
+            padding: 5px 10px;
+        }
+        .formulaAll .x{
+            background-color: #fff;
+            padding: 5px 10px;
+            width: 100px;
+        }
+        .formulaDeBhaskara{
+            width: 150px;
+            border-radius: 5px;
+            border: 2px solid #212121;
+            padding: 10px;
+            background-color: #fff;
+        }
+        .formulaDeBhaskara p,img,input, .x{
+            margin: 5px 0;
+            text-align: center;
+            font-size: 15px;
+            font-weight: 900;
+        }
+    </style>
+</head>
+<body>
+    <h2>Fórmulas matemáticas mais conhecidas</h2>
+    <div class="formulaAll formula01">
+        <p>Bhaskara</p>
+        <img class="formulaDeBhaskara" src="https://images.educamaisbrasil.com.br/content/banco_de_imagens/guia-de-estudo/D/formula-bhaskara-matematica.jpg" alt="">
+        <input class="a" type="number" name="" id="" placeholder="a">
+        <input class="b" type="number" name="" id="" placeholder="b">
+        <input class="c" type="number" name="" id="" placeholder="c">
+        <div class="x">x</div>
+    </div>   
+    <script>
+        function bhaskara(){
+            let valorA = window.document.querySelector('.a').value;
+            let valorB = window.document.querySelector('.b').value;
+		    let valorC = window.document.querySelector('.c').value;
+		    let coeficiente1;
+		    let coeficiente2;
+
+		    let delta = (valorB * valorB) - 4 * valorA * valorC;
+            document.write(`Valor de Delta => ${delta}<br/`);
+            if(delta < 0){
+                document.write("Para Delta negativo, não existem raízes reais. <br/>");
+                } else{
+                document.write("Para Delta positivo, raízes diferentes: <br/>");
+                coeficiente1 = (-valorB + Math.sqrt(delta)) / (2 * valorA);
+                coeficiente2 = (-valorB - Math.sqrt(delta)) / (2 * valorA);
+                document.write(`x = ${coeficiente1} <br/>`);
+                document.write(`x = ${coeficiente2} <br/>`);
+            }
+        }
+        bhaskara();
+    </script> 
+</body>
+</html>
+
+
+<!-- var valorA = prompt("Informe o valor de A:");
+		var valorB = prompt("Informe o valor de B:");
+		var valorC = prompt("Informe o valor de C:");
+		var coeficiente1;
+		var coeficiente2;
+
+		var delta = (valorB * valorB) - 4 * valorA * valorC;
+
+		document.write("Valor de Delta => " + delta + "<br/><br/>");
+
+		if(delta < 0){
+		  document.write("Para Delta negativo, não existem raízes reais. <br/>");  
+		} else{
+		  
+		  document.write("Para Delta positivo, raízes diferentes: <br/>");  
+		  
+		  coeficiente1 = (-valorB + Math.sqrt(delta)) / (2 * valorA);
+		  coeficiente2 = (-valorB - Math.sqrt(delta)) / (2 * valorA);
+		  
+		  document.write("x' = " + coeficiente1 + "<br/>");
+		  document.write("x'' = " + coeficiente2 + "<br/>");
+		} -->
