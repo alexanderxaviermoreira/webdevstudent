@@ -5,4 +5,4 @@ Estudo de Desenvolvi,emto Web
 - javascript
 - php
 
-![](/home/alexander/Dropbox/DESIGN_imagens/particular/alexander.svg)
+![](https://cdn.pixabay.com/photo/2018/09/08/22/37/software-3663509_960_720.jpg)
