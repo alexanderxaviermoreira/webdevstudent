@@ -2,7 +2,7 @@
 <body style="background-color: #212121; width: 100%; min-height: 100vh;">
 
 
-<h1 style="background-color:#ccc; display: flex; justify-content: center; align-items: center; padding: 10px; border-radius: 10px;">
+<h1 style="background-color:#ccc; display: flex; justify-content: center; align-items: center; padding: 10px; border-radius: 10px; text-align: center;">
     <a style="color: #212121;display: flex;justify-content: center;align-items: center;" href="">Alexander Xavier Moreira</a>
 </h1>
 
