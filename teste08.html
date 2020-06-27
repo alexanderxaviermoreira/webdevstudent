@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Dealership</title>
+    <link rel="shortcut icon" href="https://img.icons8.com/ios-filled/50/000000/car.png">" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto+Condensed|Spartan&display=swap" rel="stylesheet">
+    <script src="https://use.fontawesome.com/1fddea6606.js"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('imagens/old-auto.jpg');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            filter: sepia(100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: ease-in-out 300ms all;
+        }
+        .container:hover{
+            filter: initial;
+        }
+        .title{
+            color: #aaa;
+            font-family: 'Spartan', sans-serif;
+            font-size: 30px;
+            margin-left: 10px;
+            text-shadow: 2px 2px 1px #000;
+            font-style: italic;
+        }
+        .logoCar{
+            font-size: 30px;
+            margin: 10px;
+            color: #212121;
+            padding: 5px;
+            display: flex;
+            align-items: center;
+            cursor: context-menu;
+            font-style: italic;
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            transition: ease-in-out 300ms all;
+        }
+        .blockDown{
+            width: 80%;
+            height: auto;
+            background-color: rgba(0, 0, 0, 0.8);
+            position: absolute;
+            left: 10%;
+            bottom: 25px;
+            padding: 5px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: row;
+            transition: ease-in-out 300ms all;
+        }
+        .blockDown-left,
+        .blockDown-right{
+            flex: 1;
+            height: auto;
+            margin: 5px;
+            padding: 5px;
+        }
+        .blockDown-left{
+            text-align: right;
+        }
+        .blockDown-right{
+            text-align: left;
+        }
+        .blockDown-left h4{
+            font-family: 'Spartan', sans-serif;
+            font-size: 15px;
+        }
+        .blockDown-left h5,
+        .blockDown-right h5{
+            font-family: 'Roboto Condensed', sans-serif;
+            font-size: 12px;
+        }
+        .blockDown-left p,
+        .blockDown-right p{
+            font-family: 'Montserrat', sans-serif;
+            font-size: 13px;
+        }
+        .blockDown-left h4,h5,p{
+            color: #fff;            
+            padding: 5px;
+        }
+        .blockDown-left h4{
+            text-transform: capitalize;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+        }
+        .blockDown-right h5,p{
+            color: #fff;
+            padding: 5px;
+        }
+        .midleVR{
+            background-color: #fff;
+            width: 3px;
+            min-height: 150px;
+        }
+        .fa-long-arrow-right{
+            margin-right: 10px;
+            color: orange;
+            font-size: 25px;
+        }
+    </style>
+</head>
+<body>
+    <main class="container">
+        <i class="fa fa-car logoCar" aria-hidden="true"><h1 class="title">car dealership</h1></i>
+        <img src="imagens/wings001.svg" alt="">
+        <div class="blockDown">
+            <div class="blockDown-left">
+                <h4><i class="fa fa-long-arrow-right" aria-hidden="true"></i>old automobil</h4>
+                <h5>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h5>
+                <p>Saepe, impedit! Quos nisi aliquid quisquam similique, hic incidunt porro sequi! Sequi officiis consectetur rem ut repellat exercitationem maxime id hic doloremque!</p>
+            </div>
+            <div class="midleVR"></div>
+            <div class="blockDown-right">
+                <h5>Voluptatibus aspernatur dolorem vel accusantium, cupiditate laudantium! Architecto?</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores inventore deleniti pariatur id ab vero debitis incidunt quia cum sit placeat voluptatem.</p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
+
+<!-- font-family: 'Spartan', sans-serif;
+font-family: 'Roboto Condensed', sans-serif;
+font-family: 'Montserrat', sans-serif; -->

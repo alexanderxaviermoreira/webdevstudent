@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/ee20695280.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+/*
+        a{
+            position: absolute;
+            font-size: 20px;
+            font-weight: bolder;
+            font-family: sans-serif;
+            text-decoration: none;
+            height: 100px;
+            width: 250px;
+            line-height: 100px;
+            background-color: teal;
+        }
+        a::before{
+            content: attr(title);
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            background-color: rgb(0,109,109);
+            color: #fff;
+            transform-origin: bottom;
+            transform: translateY(-100%) rotateX(90deg);
+            transition: .5s;
+        }
+        a:hover::before{
+            transform: translateY(0) rotateX(0deg);
+        }
+        a::after{
+            content: attr(title);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            background-color: teal;
+            color: #fff;
+            transform: translateY(0%) rotateX(0deg);
+            transform-origin: top;
+            transition: .5s;
+        }
+        a:hover::after{
+            transform: translateY(100%) rotateX(90deg);            
+        }
+*/
+        .btn{
+            width: 150px;
+            height: 30px;
+            font-size: 12px;
+            line-height: 30px;
+            text-transform: uppercase;
+            border: none;
+            text-align: center;
+            font-family: sans-serif;
+            font-weight: bolder;
+            cursor: pointer;
+            padding-left: 18px;
+            background-color: #fff;
+            color: #212121;
+            box-shadow: 3px 3px 0px #000;
+            margin: 0 5px;
+            text-decoration: none;
+/*            border: 1px solid;*/
+            border-radius: 100px;
+            transition: ease-in-out .5s all;
+        }
+        .btn:after{
+            content: '';
+            position: relative;
+            left: 10px;
+            margin-left: 5px;
+            border-radius: 10px;
+            filter: opacity(0%);
+            transition: ease-in-out .3s all;
+            background-image: url('https://img.icons8.com/metro/26/000000/chevron-left.png');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            padding: 0 8px;
+        }
+        .btn:hover::after{
+            filter: opacity(100%);
+            transform: translateX(100%) rotateX(90deg);
+            position: relative;
+            left: -5px;
+        }
+        .ms{
+            display: inline-flex;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #fff;
+            box-shadow:
+                inset 3px 3px 5px gold,
+                3px 3px 5px green;
+            cursor: pointer;
+            margin: 10px;
+            transition: ease-in-out 300ms all;
+        }
+        .ms:hover{
+            box-shadow:
+                inset 3px 3px 5px green,
+                3px 3px 5px gold;
+        }
+        .fab{
+            color: #aaa;
+            margin: 0 3px;
+        }
+        .msName{
+            display: block;
+            font-family: sans-serif;
+            font-weight: bolder;
+            text-transform: uppercase;
+            color: #aaa;
+        }
+    </style>
+</head>
+<body>
+    <main class="container">
+<!--        <a href="#" title="BUTTON">BUTTON</a>-->
+   <a href="#" class="btn">botão 01</a>
+   <a href="#" class="btn">botão 02</a>
+   <a href="#" class="btn">botão 03</a>
+   
+    </main>
+
+    <br><br><br><br><br><br>
+
+   <div class="ms">
+    <i class="fab fa-instagram-square"></i>
+    <i class="fab fa-facebook-square"></i>
+    <i class="fab fa-youtube"></i>
+       <span class="msName">&nbsp;&nbsp;/&nbsp;&nbsp;alex moreira</span>
+   </div>
+
+</body>
+</html>
+
+

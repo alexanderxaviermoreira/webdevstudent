@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat|Roboto&display=swap" rel="stylesheet">
+    <script src="https://use.fontawesome.com/1fddea6606.js"></script>
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100%;
+            height: 100vh;
+            background-image: url('imagens/israel.jpg');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .sobreContainer{
+            width: 100%;
+            height: 65vh;
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            background-image: linear-gradient(to top, #fff,rgba(255, 255, 255, 0));
+        }
+        .nav{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .fa-eercast{
+            color: #fff;
+            font-size: 35px;
+            cursor: pointer;
+        }
+        .links a{
+            font-size: 25px;
+            color: #fff;
+            text-decoration: none;
+            font-family: 'Roboto';
+            padding: 10px 20px;
+            flex-grow: 1;
+            font-weight: 900;
+            border-bottom: 5px solid transparent;
+            transition: ease-in-out 500ms all;
+        }
+        .links a:hover{
+            border-bottom: 5px solid #fff;
+        }
+        .btnCloseMobile{
+            display: none;
+        }
+        .midle{
+            width: 90%;
+            height: 80%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .title{
+            font-family: 'Kaushan Script';
+            color: rgb(1, 6, 78);
+            font-size: 115px;            
+        }
+
+        /* break point */
+
+        @media (min-width: 320px) and (max-width: 1024px){
+            .links{
+                display: block;
+                background-color: rgba(0,0,0, .8);
+                width: 50vw;
+                height: 100%;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                flex-flow: wrap;
+                z-index: 1;
+                position: fixed;
+                right: 0;
+                top: 0;
+                padding: 0 20px;
+                transform: translateX(50vw);
+                transition: ease-in-out 300ms all;
+            }
+            .links a{
+                width: 100%;
+                padding: 0;
+                font-size: 30px;
+            }
+            .btnCloseMobile{
+                display: block;
+                border: none;
+                color: #212121;
+                background-color: #fff;
+                width: 25px;
+                height: 25px;
+                border-radius: 50px;
+            }
+        }
+
+        /* break point */
+    </style>
+</head>
+<body>
+    <main class="container">
+        <div class="nav">
+            <i class="fa fa-eercast" aria-hidden="true"></i>
+            <ul class="links">
+                <button class="btnCloseMobile">X</button>
+                <a href="">home</a>
+                <a href="">partners</a>
+                <a href="">products</a>
+                <a href="">services</a>
+                <a href="">contact</a>
+            </ul>
+        </div>
+        <div class="sobreContainer"></div>
+        <section class="midle">
+            <h1 class="title">israel</h1>
+        </section>
+    </main>
+
+    <script>
+        window.document.querySelector('.fa-eercast').addEventListener('click',()=>{
+            window.document.querySelector('.links').style.transform='translateX(0vw)';
+        });
+
+        window.document.querySelector('.btnCloseMobile').addEventListener('click',()=>{
+            window.document.querySelector('.links').style.transform='translateX(50vw)';
+        });
+    </script>
+
+</body>
+</html>
+
+<!-- 
+font-family: 'Kaushan Script', ;
+font-family: 'Roboto', ;
+font-family: 'Montserrat', ;
+-->

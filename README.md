@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <html>
 <body>
 
@@ -27,3 +28,13 @@ padding: 10px" >
 </body>
 
 </html>
+=======
+Estudo de **Desenvolvimeto Web**
+
+- html
+- css
+- javascript
+- php
+
+![](https://cdn.pixabay.com/photo/2018/09/08/22/37/software-3663509_960_720.jpg)
+>>>>>>> b3309886ed6321afed58452128a7339eace9a4ab

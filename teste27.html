@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            border: 0;
+            outline: 0;
+            background-color: none;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: #fff;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .title{
+            display: block;
+            font-family: sans-serif;
+            font-size: 18px;
+            text-transform: uppercase;
+            color: #000;
+            border: 1px solid #000;
+            padding: 10px 50px;
+            border-radius: 100px;
+            cursor: pointer;
+            font-weight: bolder;
+            box-shadow: 3px 3px 0px #000;
+        }
+        .title:hover{
+        }
+    </style>
+</head>
+<body class="corpo">
+    <hi class="title">clique</hi>
+    <script>
+        window.document.querySelector('.title').addEventListener('click',()=>{
+            window.document.querySelector('.corpo').style.backgroundColor = '#000';
+        });
+        window.document.querySelector('.title').addEventListener('mouseout',()=>{
+            window.document.querySelector('.corpo').style.backgroundColor = '#fff';
+        });
+        window.document.querySelector('.title').addEventListener('click',()=>{
+            window.document.querySelector('.title').innerHTML = 'CLICADO';
+        });
+    </script>
+</body>
+</html>
