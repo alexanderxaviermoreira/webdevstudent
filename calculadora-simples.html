@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Rubik+Mono+One|Share+Tech&display=swap" rel="stylesheet"> 
+    <title>Basic Calc</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            height: 100vh;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #101010;
+            min-width: 320px;
+            min-height: 568px;
+        }
+        h1{
+            letter-spacing: 0.15em;
+            font-size: 1.60em;
+            font-weight: 100;
+            text-transform: uppercase;
+            color: darkolivegreen;
+            font-family: 'Rubik Mono One', sans-serif;
+            text-shadow: 0.10em 0.10em 0.12em #fff;
+        }
+        input{
+            text-align: center;
+            padding: 0.25em
+        }
+        #adicao,
+        #subtracao,
+        #multiplicacao,
+        #divisao{
+          border-radius: 50%;
+          width: 2.5em;
+          height: 2.5em;
+          border: none;
+          font-size: 1em;
+          background-color: darkolivegreen;
+          color: #fff;
+          font-weight: bolder;
+          cursor: pointer;
+        }
+        #resultado{
+            border: 0.01em solid #101010;
+            padding: 0.25em 1.5em;
+            text-transform: uppercase;
+        }
+        .campo01,
+        .campo02{
+            background-color: darkolivegreen;
+            border-radius: 0.20em;
+            width: 85%;
+            text-align: center;
+            padding: 0.5em;
+            margin: 0.5em 0;
+        }
+        .botoes{
+            margin: 0.5em 0;            
+            width: 85%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: row;
+            padding: 0.5em 0;            
+        }
+        #campo01,
+        #campo02{
+            border: none;
+            padding: 1em;
+            width: 90%;
+            font-family: 'Share Tech', sans-serif;
+        }
+        .resultado{
+            background-color: darkolivegreen;
+            color: #fff;
+            font-weight: bolder;
+            width: auto;
+            text-align: center;
+            font-size: 1.35em;
+            font-family: 'Share Tech', sans-serif;
+        }
+    </style>
+</head>
+<body>    
+    <main class="container">
+        <h1>Calculadora</h1>
+          <div class="campo01"><input id="campo01" type="number"></div>
+          <div class="campo02"><input id="campo02" type="number"></div>
+          <div class="botoes">
+              <input value='+' id="adicao" type="submit" onclick="adicao()">
+              <input value='-' id="subtracao" type="submit" onclick="subtracao()">
+              <input value='*' id="multiplicacao" type="submit" onclick="multiplicacao()">
+              <input value='/' id="divisao" type="submit" onclick="divisao()">
+          </div>
+          <div class="resultado" id="resultado">Aguardando resultado</div>
+      </main>
+
+    <script>
+        function adicao(){
+            let num1 = window.document.getElementById('campo01');
+            let num2 = window.document.getElementById('campo02');
+            let res = window.document.getElementById('resultado');
+
+            if(num1.value.length == 0 || num2.value.length == 0){
+                resultado.innerHTML = 'Insira um número';
+                window.alert('Insira um número');
+                resultado.style.backgroundColor = 'red';
+            }else{
+                let numero01 = Number(num1.value);
+                let numero02 = Number(num2.value);
+                resultado.style.color = '#fff';
+                resultado.style.backgroundColor = 'darkolivegreen';
+                resultado.innerHTML = `${numero01} + ${numero02} = ${numero01+numero02}`;
+            }
+        }
+
+        function subtracao(){
+            let num1 = window.document.getElementById('campo01');
+            let num2 = window.document.getElementById('campo02');
+            let res = window.document.getElementById('resultado');
+
+            if(num1.value.length == 0 || num2.value.length == 0){
+                resultado.innerHTML = 'Insira um número';
+                window.alert('Insira um número');
+                resultado.style.backgroundColor = 'red';
+            }else{
+                let numero01 = Number(num1.value);
+                let numero02 = Number(num2.value);
+                resultado.style.color = '#fff';
+                resultado.style.backgroundColor = 'darkolivegreen';
+                resultado.innerHTML = `${numero01} - ${numero02} = ${numero01-numero02}`;
+            }
+        }
+
+        function multiplicacao(){
+            let num1 = window.document.getElementById('campo01');
+            let num2 = window.document.getElementById('campo02');
+            let res = window.document.getElementById('resultado');
+
+            if(num1.value.length == 0 || num2.value.length == 0){
+                resultado.innerHTML = 'Insira um número';
+                window.alert('Insira um número');
+                resultado.style.backgroundColor = 'red';
+            }else{
+                let numero01 = Number(num1.value);
+                let numero02 = Number(num2.value);
+                resultado.style.color = '#fff';
+                resultado.style.backgroundColor = 'darkolivegreen';
+                resultado.innerHTML = `${numero01} * ${numero02} = ${numero01*numero02}`;
+            }
+        }
+
+        function divisao(){
+            let num1 = window.document.getElementById('campo01');
+            let num2 = window.document.getElementById('campo02');
+            let res = window.document.getElementById('resultado');
+
+            if(num1.value.length == 0 || num2.value.length == 0){
+                resultado.innerHTML = 'Insira um número';
+                window.alert('Insira um número');
+                resultado.style.backgroundColor = 'red';
+            }else{
+                let numero01 = Number(num1.value);
+                let numero02 = Number(num2.value);
+                resultado.style.color = '#fff';
+                resultado.style.backgroundColor = 'darkolivegreen';
+                resultado.innerHTML = `${numero01} / ${numero02} = ${numero01/numero02}`;
+            }
+        }
+    </script>
+
+</body>
+</html>
