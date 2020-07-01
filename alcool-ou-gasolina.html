@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ee20695280.js" crossorigin="anonymous"></script>
+    <title>Álcool ou Gasolina</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            border: 0;
+            box-sizing: border-box;
+            background-color: none;
+            outline: 0;
+            font-family: 'Montserrat', sans-serif;
+        }
+        body{
+            max-width: 100%;
+            min-height: 100vh;
+            box-shadow: 2px 2px 5px #fff;
+            padding: 10px 20px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(77, 30, 131);
+        }
+        .top{
+            width: 100%;
+            margin: 10px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* border: 1px solid #fff; */
+        }
+        .imageInfoBy{
+            font-size: 50px;
+            color: #fff;
+        }
+        .top h3{
+            font-size: 20px;
+            text-align: center;
+            padding: 2px;
+            line-height: 30px;
+            border-radius: 5px;
+            margin: 10px 0;
+            width: 100%;
+        }
+        .top .alcool{
+            color: green;
+            background-color: gold;
+        }
+        .top .gasolina{
+            color: gold;
+            background-color: green;
+        }
+        .midle{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            /* border: 1px solid #fff; */
+        }
+        .midle input{
+            margin: 5px 0;
+        }
+        .alcoolValue{
+            border-bottom: 5px solid gold;
+        }
+        .gasolinaValue{
+            border-bottom: 5px solid green;
+        }
+        .midle input[type=number]{
+            width: 100%;
+            height: 45px;
+            text-align: center;
+            font-size: 25px;
+            color: #000;
+            font-weight: bolder;
+            background-color: #fff;
+            border-radius: 100px;
+        }
+        .midle input[type=submit]{
+            width: 100%;
+            height: 35px;
+            text-align: center;
+            background-image: linear-gradient(to left,gold 50%,green);
+            text-transform: uppercase;
+            color: #fff;
+            font-weight: bolder;
+            text-shadow: 1px 1px 0 #000;
+            cursor: pointer;
+            border-radius: 100px;
+        }
+        .divisao{
+            border-bottom: 1px solid #212121;
+            width: 100%;
+            height: 35px;
+            text-align: center;
+            line-height: 35px;
+            margin-top: 10px;
+            font-weight: 100;
+            font-size: 15px;
+            letter-spacing: 2px;
+            color: #fff;
+        }
+        .valeAPena{
+            width: 100%;
+            min-height: 30px;
+            text-align: center;
+            margin-top: 10px;
+            padding: 5px;
+            font-size: 14px;
+            background-color: #fff;
+            border-radius: 100px;
+        }
+    </style>
+</head>
+<body>
+    <header class="top">
+        <i class="imageInfoBy fas fa-oil-can"></i>
+        <h3 class="alcool">Ethanol</h3>
+        <h3 class="gasolina">Gasoline</h3>
+    </header>
+    <main class="midle">
+        <input type="number" class="alcoolValue" placeholder="Ethanol"><br>
+        <input type="number" class="gasolinaValue" placeholder="Gasoline">
+        <input type="submit" class="calc" value="Calculate">
+        <div class="divisao">PERCENTAGE</div>
+        <div class="valeAPena"></div>
+    </main>
+    <script>
+        function divisao(){
+            window.document.querySelector('.calc').addEventListener('click',()=>{
+                let alcool = window.document.querySelector('.alcoolValue').value;
+                let gasolina = window.document.querySelector('.gasolinaValue').value;
+                let res = (alcool / gasolina)*100;
+                window.document.querySelector('.divisao').innerHTML=`${res.toFixed(2)} %`;
+            if(res >= 70){
+                window.document.querySelector('.valeAPena').style.color='#ff0000';
+                window.document.querySelector('.valeAPena').innerHTML=`Ethanol purchase is NOT recommended`;
+            }else{
+                window.document.querySelector('.valeAPena').style.color='#000';
+                window.document.querySelector('.valeAPena').innerHTML=`Ethanol purchase recommended`;
+            }
+            });
+        }
+        divisao();
+        function clear(){
+            
+        }
+        clear();
+    </script>
+</body>
+</html>
