@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap');
+        *{
+            padding: 0;
+            margin: 0;
+            border: 0;
+            outline: 0;
+            box-sizing: border-box;
+            background-color: none;
+            list-style: none;
+            font-family: 'Inter', sans-serif;
+        }
+        body{
+            width: 100%;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;        
+        }
+        .attribution {
+            font-size: 11px;
+            text-align: center;
+        }
+        .attribution a {
+            color: hsl(228, 45%, 44%);
+        }
+        .first,
+        .second{
+            width: 100%;
+            min-height: 50vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .first{
+            background-image: url('../img/pattern-bg.svg');
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            padding: 5px;
+        }
+        .first__slide{
+            position: absolute;
+            width: 250px;
+            height: 250px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: flex-start;
+            overflow: hidden;
+        }
+        .first__slide .img01{
+            transform: translateX(125px);
+        }
+        .first__slide .img02{
+            transform: translateX(125px);
+        }
+        .first__slide .img01,
+        .first__slide .img02{
+            object-fit: cover;
+            width: 250px;
+            height: 250px;
+            transition: ease-in-out 500ms all;
+        }
+        .first__slide .btnAll{
+            position: absolute;
+            right: 35%;
+            bottom: 0;
+            background-color: #fff;
+            width: 92px;
+            height: 40px;
+            border-radius: 100px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .rightButton,
+        .leftButton{
+            cursor: pointer;
+            width: 40px;
+            height: 40px;
+            background-color: #fff;
+            border-radius: 100px;
+            background-size: 25%;
+            background-position: center;
+            background-repeat: no-repeat;
+            transition: ease-in-out 300ms all;
+        }
+        .rightButton:hover,
+        .leftButton:hover{
+            background-color: #212121;
+        }
+        .rightButton{background-image: url('../img/icon-prev.svg');}
+        .leftButton{background-image: url('../img/icon-next.svg');}
+        .second{
+            background-image: url('../img/pattern-curve.svg');
+            background-position: bottom;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        .second__slide{
+            width: 250px;
+            height: 250px;
+            background-image: url('../img/pattern-quotes.svg');
+            background-position: top;
+            background-size: 25%;
+            background-repeat: no-repeat;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: flex-start;
+            overflow: hidden;
+        }
+        .discrOne,
+        .discrTwo{
+            width: 250px;
+            height: 250px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .discrTwo{
+            display: none;
+        }
+        .second p{
+            text-align: center;
+            line-height: 25px;
+            color: #5a5967;
+        }
+        .second h5,h6{
+            text-align: center;
+            padding: 5px 0;
+        }
+        .second h5{
+            color: hsl(240, 38%, 20%);
+        }
+        .second h6{
+            color: hsl(240, 18%, 77%);
+        }
+        @media(min-width: 568px){
+            body{
+                flex-direction: row;
+                flex-direction: row-reverse;
+            }
+            .first{justify-content: flex-start;position: relative;right: 2vh;}
+            .second{justify-content: flex-end;position: relative;left: 2vh;}
+            .discrOne, .discrTwo{justify-content: space-around;align-items: center;padding: 30px 0;}
+            .discrOne p, .discrTwo p{text-align: left; line-height: 25px;}
+        }
+        @media (max-width: 1444px){
+        }
