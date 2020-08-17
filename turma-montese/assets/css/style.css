@@ -1,0 +1,175 @@
+html {
+    scroll-behavior: smooth;
+    }
+.cabecalho {
+    height: 100vh;
+
+    background-image:url('../imagens/EsSA_portao_das_armas_PB.png');
+    background-position:center;
+    background-size:cover;
+    background-repeat:no-repeat;
+}
+.corpo01 {
+    height: auto;
+}
+.corpo01 h5 {
+    font-family: 'Oswald', sans-serif;
+}
+.corpo01 .news01 {
+    font-family: 'Montserrat', sans-serif;
+}
+.news01 {
+    line-height: 2em;
+    letter-spacing: 0.1em;
+}
+.corpo01 div {
+    height: 100%;
+    color: #000;
+    font-size: 1.1em;
+}
+.corpo03 {
+    height: auto;
+}
+.corpo02 {
+    height: 100vh;
+    overflow: auto;
+}
+.corpo02 h6 {
+    font-size: 2em;
+    font-family: 'Oswald', sans-serif;
+}
+
+/* OS FEIOS */
+
+.figure img {
+    transition: ease 300ms all;
+    cursor: grab;
+}
+.figure img:hover {
+    transform: scale(1.2);
+}
+
+/* OS FEIOS */
+
+.rodape {
+    height: auto;
+}
+.rodape img {
+    width: 2em;
+}
+.rodape a {
+    width: 5em;
+}
+
+/* NAVEGAÇÃO */
+
+.navbar {
+    position: fixed;
+    top: 2%;
+    left: 2%;
+    z-index: 99999;
+    width: 96%;
+    background-color: rgba(0, 0, 0, 0.35)
+}
+.navbar-nav {
+    background-color: transparent;
+}
+.collapse {
+    background-color: transparent;
+}
+.navbar-toggler {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.navbar-toggler span {
+    font-size: 0.6em;
+}
+.dropdown-menu {
+    background-color: transparent;
+}
+
+/* NAVEGAÇÃO */
+
+/* BOTÃO FIXO */
+
+.botao_fixo {
+    position: fixed;
+    top: 10%;
+    left: 0;
+    z-index: 99999;
+    width: 2em;
+    height: 2em;
+    background-image: url('../imagens/arrow-up.svg');
+    background-position: center;
+    background-size: 50%;
+    background-repeat: no-repeat;
+  }
+
+/* BOTÃO FIXO */
+
+
+/* CARROSSEL */
+
+.carousel-item p {
+    font-size: 1em;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+}
+
+/* CARROSSEL */
+
+
+/* CARD NOTÍCIAS */
+
+.card-body {
+    font-family: 'Montserrat', sans-serif;
+    transition: ease 500ms all;
+}
+.card img {
+    width: 20%;
+}
+.card {
+    cursor: pointer;
+    transition: ease 500ms all;
+}
+.card:hover {
+    background-color: darkorange;
+}
+.card-body:hover {
+    color: #fff;
+}
+.card-columns {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-flow: row wrap;
+}
+.card-columns p {
+    font-size: 0.8em;
+}
+
+/* CARD NOTÍCIAS */
+
+/* ENCONTROS */
+.encontro01 {
+
+}
+.encontro01 h6,
+.encontro02 h6, {
+    font-size: 2em;
+    font-family: 'Oswald', sans-serif;
+}
+.encontro01 h5 {
+    font-size: 1em;
+    font-family: 'Oswald', sans-serif;
+}
+.galeria01 {
+}
+.galeria01 img {
+    cursor: pointer;
+}
+.galeria01 img:hover {
+}
+
+/* ENCONTROS */

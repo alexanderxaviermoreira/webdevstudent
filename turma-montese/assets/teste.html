@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Turma Montese/EsSA 1990/ENGENHARIA</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="assets/imagens/quaderna.png" type="image/x-icon">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <style>
+    html {
+      scroll-behavior: smooth;
+      }
+        body {
+        }
+        header {
+          height: 100vh;
+          background-image: url('assets/imagens/fotodopelotao.jpg');
+          background-position: center;
+          background-size: cover;
+          background-repeat: no-repeat;
+        }
+        .confraternizacao {
+          background-image: url('assets/imagens/revista_o_monitor_capa.png');
+          background-size: cover;
+          background-position: bottom;
+          background-repeat: no-repeat;
+          height: auto;
+        }
+        .confraternizacao p {
+          font-size: 1em;
+          text-shadow: 0.1em 0.1em 0.01em #fff;
+          background-color: rgba(138, 14, 14, 0.5);
+          letter-spacing: 0.1em;
+          font-family: sans-serif;
+          font-weight: 400;
+        }
+        .todos_os_alunos {
+          background-image: url('assets/imagens/EsSA_portao_das_armas.jpg');
+          background-size: cover;
+          background-position: bottom;
+          background-repeat: no-repeat;
+          height: auto;
+        }
+        .todos_os_alunos h6 {
+          font-size: 1.2em;
+          text-shadow: 0.05em 0.05em 0.03em #000;
+        }
+        .todos_os_alunos img {
+          cursor: pointer;
+          transition: ease 500ms all;
+        }
+        .todos_os_alunos img:hover {
+          transform: scale(1.2);
+          z-index: 99999;
+        }
+        .container-fluid {
+            
+        }
+        .can_eng {            
+            z-index: 99999;
+            position: absolute;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.6);
+            color: #fff;
+            border-radius: 0.5em;
+            font-size: 1.1em;
+            font-style: italic;
+            font-weight: 100;
+            font-family: sans-serif;
+            box-shadow: 0.1em 0.1em 0.5em #fff;
+        }
+        .can_eng img {
+            width: 25%;
+            margin-left: 40%;
+            background-color: #fff;
+            padding: 0.3em;
+        }
+        .botao_fixo {
+          position: fixed;
+          top: 0;
+          left: 0;
+          z-index: 99999;
+          width: 2em;
+          height: 2em;
+          background-color: gold;
+          background-image: url('assets/imagens/arrow-up.svg');
+          background-position: center;
+          background-size: 50%;
+          background-repeat: no-repeat;
+        }
+        .navbar {
+        }
+        .navbar-nav {
+            background-color: transparent;
+        }
+        .collapse {
+            background-color: transparent;
+        }
+        .navbar-toggler {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+        .dropdown-menu {
+            background-color: transparent;
+        }
+        
+    </style>
+  </head>
+  <span id="topo"></span>
+  <body>
+
+    <!-- can_eng -->
+
+        <div class="can_eng alert alert-dismissible fade show p-1 m-2" role="alert">
+          <h5 class="card-title mt-2">30 ANOS DE FORMAÇÃO</h5>
+          <p class="card-text">A comissão da Turma Montese de Engenharia informa que...</p>
+          <a href="#confraternizacao" class="badge btn btn-primary p-2">Visitar</a>
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span class="text-warning" aria-hidden="true">&times;</span>
+            </button>
+        </div>
+
+    <!-- can_eng -->
+
+    <!-- BOTÃO FIXO -->
+        
+        <a  class="botao_fixo p-1 rounded-circle" href="#topo"></a>
+
+    <!-- BOTÃO FIXO -->
+
+    <main class="container-fluid">
+
+        <!-- NAVEGAÇÃO -->
+
+        <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="#">
+                    <img class="w-100" src="assets/imagens/logo_name.png" alt="">
+                </a>
+                <button class="navbar-toggler p-1" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+                  <span class="badge btn btn-sm btn-warning">B R A S I L</span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+                  <ul class="navbar-nav mr-auto">
+
+                    <li class="nav-item active m-1">
+                      <a class="nav-link text-light btn btn-danger btn-sm pr-3 pl-3 ml-1 mr-1" href="#">Home <span class="sr-only">(página atual)</span></a>
+                    </li>
+
+                    <li class="nav-item dropdown m-1">
+                        <a class="nav-link text-light btn btn-danger btn-sm pr-3 pl-3 ml-1 mr-1 dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">OS FEIOS</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+                        <a class="dropdown-item bg-primary text-light pr-3 pl-3 m-1" href="https://pt.calameo.com/read/0052660743ca32b14f8ae" target="_blank">REVISTA "O MONITOR"</a>
+                        <a class="dropdown-item bg-primary text-light pr-3 pl-3 m-1" href="#">Os feios de HOJE</a>
+                        <a class="dropdown-item bg-primary text-light pr-3 pl-3 m-1" href="#os_feios_de_ontem">Os feios de ONTEM</a>
+                        <a class="dropdown-item bg-primary text-light pr-3 pl-3 m-1" href="#">Encontros</a>
+
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown m-1">
+                      <a class="nav-link text-light btn btn-danger btn-sm pr-3 pl-3 ml-1 mr-1 dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Força Terrestre</a>
+
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item bg-primary text-light pr-3 pl-3 m-1" href="http://www.exercito.gov.br">Exército Brasileiro</a>
+                        <a class="dropdown-item bg-primary text-light pr-3 pl-3 m-1" href="http://www.essa.eb.mil.br">EsSA</a>
+                        <a class="dropdown-item bg-primary text-light pr-3 pl-3 m-1" href="http://www.easa.eb.mil.br">EASA</a>
+                      </div>
+                    </li>
+
+                    <li class="nav-item m-1">
+                      <a class="nav-link text-light btn btn-danger btn-sm pr-3 pl-3 ml-1" href="#">Desativado</a>
+                    </li>
+
+                  </ul>
+                </div>
+              </nav>
+
+        <!-- NAVEGAÇÃO -->
+
+        <header class="">
+            
+        </header>
+        
+        <section class="confraternizacao mt-2" id="confraternizacao">
+          <p class="p-3 text-dark text-center">...estão sendo tomadas as providências para a realização do nosso encontro, no qual será comemorado o aniversário de 30 (trinta) de formação do <span class="text-warning">Curso de Engenharia da Escola de Sargentos das Armas - Turma Montese (1990)</span>. Nesse "Web Site" serão postadas e solicitadas, aos nobres companheiros, informações necessárias e as decisões tomadas para a realização dos eventos. <span class="text-danger">"FIQUEM ATENTOS"</span></p>          
+        </section>
+
+        <section class="todos_os_alunos mt-2" id="os_feios_de_ontem">
+          <h6 class="text-center pt-2 pb-2 text-light">F O R M A N D O S</h6>
+          <div class="d-flex flex-row flex-wrap justify-content-center align-item-center">
+            <img class="m-1 w-25 rounded img-thumbnail" src="assets/imagens/os_feios/01.png" alt="">
+            <img class="m-1 w-25 rounded img-thumbnail" src="assets/imagens/os_feios/02.png" alt="">
+            <img class="m-1 w-25 rounded img-thumbnail" src="assets/imagens/os_feios/03.png" alt="">
+            <img class="m-1 w-25 rounded img-thumbnail" src="assets/imagens/os_feios/04.png" alt="">
+            <img class="m-1 w-25 rounded img-thumbnail" src="assets/imagens/os_feios/05.png" alt="">
+            <img class="m-1 w-25 rounded img-thumbnail" src="assets/imagens/os_feios/06.png" alt="">
+            <img class="m-1 w-25 rounded img-thumbnail" src="assets/imagens/os_feios/07.png" alt="">
+            <img class="m-1 w-25 rounded img-thumbnail" src="assets/imagens/os_feios/08.png" alt="">
+            <img class="m-1 w-25 rounded img-thumbnail" src="assets/imagens/os_feios/09.png" alt="">
+            <img class="m-1 w-25 rounded img-thumbnail" src="assets/imagens/os_feios/10.png" alt="">
+          </div>
+        </section>
+
+    </main>
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
