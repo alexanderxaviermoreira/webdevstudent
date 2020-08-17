@@ -25,6 +25,11 @@ padding: 10px" >
 </br>
 </br>
 
+
+<li><a href="https://alexanderxaviermoreira.github.io/webdevstudent/first-project/" target="_blank">Primeiro Projeto</a></li>
+<br>
+<li><a href="https://alexanderxaviermoreira.github.io/webdevstudent/second-project/" target="_blank">Segundo Projeto</a></li>
+
 </body>
 
 </html>
