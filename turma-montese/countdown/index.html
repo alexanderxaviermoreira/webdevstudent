@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=main, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Share+Tech&display=swap" rel="stylesheet">
+    <title>Regressiva para 2020</title>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        /* background-color: rgb(42, 53, 102); */
+    }
+    .container{
+        background-image: url('http://2.bp.blogspot.com/-tV9Q-AVFz2s/U0r5HCuLMVI/AAAAAAABLak/VlyPBS_0t64/s1600/md6.jpg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100vh;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    .container::after{
+        z-index: 0;
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-image: linear-gradient(-30deg, #00922c, #fdf250, #fff,#00b5ec);
+        filter: opacity(.8);
+    }
+    .title,
+    .subtitle{
+        z-index: 1;
+        font-size: 22px;
+        text-align: center;
+        color: #343e74;
+        padding: 10px 0;
+        word-spacing: 0.25em;
+        font-weight: bolder;
+        font-family: 'Roboto', sans-serif;
+        width: 100%;
+        font-style: italic;
+        letter-spacing: 0.05em;
+        text-shadow: 0.1em 0.1em 0em #fff;
+    }
+    .countdown{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        align-items: center;
+        z-index: 1;
+    }
+    #day,#hour,#minute,#second{
+        width: 1.25em;
+        height: 1.25em;
+        text-align: center;
+        padding: 0.05em;
+        margin: 0.15em;
+        font-size: 55px;
+        font-weight: bolder;
+        border-radius: 0.05em;
+        color: #fff;
+        background-color: #343e74;
+        font-family: 'Share Tech', sans-serif;
+        box-shadow: 0.03em 0.03em 0.08em #fff;
+        display: block;
+        text-shadow: 0.1em 0.1em 0.05em #212121;
+    }
+    .countdown div{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        transition: ease-in-out 300ms all;
+    }
+    .countdown div:hover{
+        transform: scale(1.1);
+        background-color: #fff;
+        color: rgb(52, 62, 116);
+        cursor: pointer;
+    }
+    .nameTime{
+        color: rgb(52, 62, 116);
+        font-family: 'Share Tech', sans-serif;
+        background-color: #fff;
+        width: 80%;
+        text-align: center;
+        padding: 0.2em;
+        font-size: 1.2em;
+        border-radius: 0.05em;
+    }        
+    </style>
+</head>
+<body>
+    <main class="container">
+        <h1 class="title">MONTESE ENGENHARIA <br> EsSA 1990</h1>
+        <h2 class="subtitle">CONFRATERNIZAÇÃO <br> JOÃO PESSOA / PB</h2>
+        <div class="countdown">
+            <div>
+                <span id="day"></span>
+                <span class="nameTime">Days</span>
+            </div>
+            <div>
+                <span id="hour"></span>
+                <span class="nameTime">Hours</span>
+            </d>
+            </div>
+            <div>
+                <span id="minute"></span>
+                <span class="nameTime">Minutes</span>
+            </d>
+            </div>
+            <div>
+                <span id="second"></span>
+                <span class="nameTime">Seconds</span>
+            </d>
+            </div>
+
+        </div>
+    </main>
+    <script>
+        var countDate = new Date('Oct 10,2020 00:00:00').getTime();
+        function newYear(){
+            var now = new Date().getTime();
+            gap = countDate - now;
+            var second = 1000;
+            var minute = second*60;
+            var hour = minute*60;
+            var day = hour*24;
+
+            var d = Math.floor(gap/(day));
+            var h = Math.floor((gap%(day))/(hour));
+            var m = Math.floor((gap%(hour))/(minute));
+            var s = Math.floor((gap%(minute))/second);
+
+            document.getElementById('day').innerText = d;
+            document.getElementById('hour').innerText = h;
+            document.getElementById('minute').innerText = m;
+            document.getElementById('second').innerText = s;
+        }
+        setInterval(function(){
+            newYear();
+        },1000);
+    </script>
+</body>
+</html>
