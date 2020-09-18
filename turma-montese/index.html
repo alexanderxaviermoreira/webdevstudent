@@ -14,8 +14,23 @@
 <title>Turma Montese - ENGENHARIA - 1990</title>
 </head>
 <body class="bg-dark">
+
+    <!-- MODAL -->
+
+    <div class="modal">
+        <div class="modal-top">
+            <div class="btn-close">x</div>
+        </div>
+        <div class="content">
+          <p class="title">Notícias rápidas para não ficar por fora</p>
+          <p class="news"></p>
+        </div>
+    </div>
+
+
+    <!-- MODAL -->
     
-    <main class="container-fluid mt-2 mb-2">
+    <main class="mt-2 mb-2">
 
         <!-- TOPO --> <span id="topo"></span> <!-- TOPO -->
 
@@ -124,15 +139,15 @@
                     </div>
                 </div>
                 
-                <!-- <div class="card">
+                <div class="card">
                     <img class="card-img-top " src="assets/imagens/enquete.svg" alt="">
                     <div class="card-body">
-                        <h4 class="card-title"> </h4>
-                        <p class="card-text"> </p>
+                        <h4 class="card-title">17 Set 2020</h4>
+                        <p class="card-text">Criado um grupo no WhatsApp só para aqueles que optaram participar da confraternização em João Pessoa. A finalidade é repassar informações mais detalhadas sobre o evento e se necessário dar um maior apoio aos participantes.</p>
                     </div>
                 </div>
 
-                <div class="card">
+                <!-- <div class="card">
                     <img class="card-img-top" src="assets/imagens/enquete.svg" alt="">
                     <div class="card-body">
                         <h4 class="card-title"> </h4>
@@ -500,5 +515,16 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<script>
+
+function noModal(){
+    document.querySelector('.btn-close').addEventListener('click',()=>{
+        document.querySelector('.modal').style.display='none';
+    });
+}
+noModal();
+
+</script>
 </body>
 </html>
