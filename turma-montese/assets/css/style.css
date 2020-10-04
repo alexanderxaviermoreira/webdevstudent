@@ -7,9 +7,13 @@
 html {
     scroll-behavior: smooth;
 }
+body{
+    background-color: whitesmoke;
+}
 main{
-    width: 100%;
+    max-width: 990px;
     min-height: 100vh;
+    margin: 0 auto;
 }
 .cabecalho {
     height: 100vh;
@@ -197,15 +201,15 @@ main{
 /* MODAL */
 
 .modal{
-    width: 320px;
+    width: 310px;
     height: 400px;
     background-image: url('../imagens/Praia_ponta_do_seixas_farol_de_cabo_branco_joao_pessoa_paraiba.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 55%;
+    left: 52%;
     margin-top: -200px;
     margin-left: -160px;
     right: 15%;
@@ -215,8 +219,16 @@ main{
     display: flex;
     flex-direction: column;
     border-radius: 10px;
-    border: 2px solid rgb(253, 253, 253);
-    
+    box-shadow: 3px 3px 4px #fff;
+    cursor: pointer;
+    transition: ease-in-out 300ms all;  
+    filter: grayscale(50%);
+}
+.modal:hover{
+    transform: scale(1.05);
+    box-shadow: 1px 1px 4px #212121; 
+    height: 300px; 
+    filter: grayscale(initial);
 }
 .modal-top{
     width: 100%;
@@ -226,10 +238,12 @@ main{
     align-items: center;
 }
 .title{
-    color: tomato;
-    text-shadow: 1px 1px 1px #212121;
     letter-spacing: 1px;
     text-align: center;
+    color: #fff;
+    text-shadow: 2px 2px 0 orangered;
+    font-size: 20px;
+    font-style: italic;
 }
 .news{
     padding: 5px;
@@ -239,20 +253,19 @@ main{
     text-shadow: 2px 2px 2px #212121;
 }
 .btn-close{
+    width: 30px;
+    height: 30px;
     font-family: 'Oswald', sans-serif;
     font-weight: 900;
     font-size: 20px;
-    padding: 10px;
+    line-height: 10px;
+    padding: 10px 10px 25px 10px;
     background-color: transparent;
     text-align: center;
     cursor: pointer;
     background-color: tomato;
     color: #fff;
     border-radius: 5px;
-}
-.fa-sun{
-    font-size: 45px;
-    color: gold;
 }
 
 /* MODAL */
