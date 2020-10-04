@@ -13,22 +13,6 @@
 
 <title>Turma Montese - ENGENHARIA - 1990</title>
 </head>
-
-<!-- MODAL -->
-
-<div class="modal">
-    <div class="modal-top">
-        <div class="btn-close">x</div>
-    </div>
-    <div class="content">
-      <p class="title">
-          <i class="fas fa-sun"></i> <br> TURMA MONTESE - ENGENHARIA - EsSA/1990 <br> CONFRATERNIZAÇÃO <br> <u>30 Anos de Formação</u> </p>
-      <p class="news">Será inesquecível...</p>
-    </div>
-</div>
-
-
-<!-- MODAL -->
 <body>
     
     <main class="mt-2 mb-2">
@@ -551,6 +535,25 @@
 
     </main>
 
+    <!-- MODAL -->
+    
+    <section class="bg-news">
+        <div class="news">
+            <div class="news-top">
+                <div class="btn-close">x</div>
+            </div>
+            <div class="content">
+                <p class="title">
+                    <i class="fas fa-sun"></i><br>TURMA MONTESE - ENGENHARIA - EsSA/1990 <br>CONFRATERNIZAÇÃO<br><u>30 Anos de Formação</u>
+                </p>
+                <p class="subtitle">Será inesquecível...</p>
+            </div>
+        </div>
+    </section>
+    
+    
+    <!-- MODAL -->
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
@@ -559,7 +562,8 @@
 
 function noModal(){
     document.querySelector('.btn-close').addEventListener('click',()=>{
-        document.querySelector('.modal').style.display='none';
+        document.querySelector('.news').style.transform='translateX(-100%)';
+        document.querySelector('.bg-news').style.transform='translateX(-100%)';
     });
 }
 noModal();

@@ -189,33 +189,35 @@ main{
 }
 .galeria01 {
 }
-.galeria01 img {
-    cursor: pointer;
-}
-.galeria01 img:hover {
-}
 
 /* ENCONTROS */
 
 
 /* MODAL */
 
-.modal{
-    width: 310px;
-    height: 400px;
+.bg-news{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    background-image: linear-gradient(rgba(0, 188, 212, 0.527), rgba(255, 0, 0, 0.5));
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15% 0 0 0;
+    transition: ease-in-out 300ms all;
+}
+.news{
+    z-index: 1;
+    width: 290px;
+    height: 450px;
     background-image: url('../imagens/Praia_ponta_do_seixas_farol_de_cabo_branco_joao_pessoa_paraiba.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    position: absolute;
-    top: 55%;
-    left: 52%;
-    margin-top: -200px;
-    margin-left: -160px;
-    right: 15%;
-    z-index: 10 !important;
-    display: block;
-    padding: 10px;
+    padding: 20px;
     display: flex;
     flex-direction: column;
     border-radius: 10px;
@@ -224,13 +226,7 @@ main{
     transition: ease-in-out 300ms all;  
     filter: grayscale(50%);
 }
-.modal:hover{
-    transform: scale(1.05);
-    box-shadow: 1px 1px 4px #212121; 
-    height: 300px; 
-    filter: grayscale(initial);
-}
-.modal-top{
+.news-top{
     width: 100%;
     display: flex;
     flex-direction: row;
