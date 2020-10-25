@@ -3,7 +3,7 @@
 #       math.sqrt(variavel)
 # from math import sqrt - importa só o "sqrt"
 #       sqrt(variavel) - sem o "math"
-# from math import sqrt, flor, ceil - importa algumas
+# from math import sqrt, floor, ceil - importa algumas
 
 from math import sqrt, floor, ceil
 import random
