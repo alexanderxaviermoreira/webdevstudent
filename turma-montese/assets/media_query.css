@@ -1,0 +1,34 @@
+
+/*
+@media only screen and (min-width: 568px) and (max-width: 1024px) {
+    main {
+        width: 100%;
+    }
+}*/
+
+@media only screen and (max-width: 1023px) {
+    .divDesktop {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 568px) and (max-width: 1024px) {
+    main {
+        width: 100%;
+        height: 100%;
+    }
+    header button {
+        margin: 0.5em 1em;
+    }
+    
+}
+@media only screen and (min-width: 1025px) {
+    main {
+        width: 100%;
+        height: 100%;
+    }
+    .sobreMenu,
+    .menu_hamburguer {
+        display: none;
+    }
+}
