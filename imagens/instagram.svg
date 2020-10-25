@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="13.438404mm"
+   height="13.438405mm"
+   viewBox="0 0 13.438404 13.438405"
+   version="1.1"
+   id="svg2044"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"
+   sodipodi:docname="instagram.svg">
+  <defs
+     id="defs2038" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="9.1748859"
+     inkscape:cx="25.395409"
+     inkscape:cy="25.395411"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:snap-bbox="true"
+     inkscape:bbox-paths="true"
+     inkscape:bbox-nodes="true"
+     inkscape:snap-bbox-edge-midpoints="true"
+     inkscape:snap-bbox-midpoints="true"
+     inkscape:object-paths="true"
+     inkscape:snap-intersection-paths="true"
+     inkscape:snap-smooth-nodes="true"
+     inkscape:snap-midpoints="true"
+     inkscape:snap-object-midpoints="true"
+     inkscape:snap-center="true"
+     inkscape:snap-text-baseline="true"
+     inkscape:snap-page="true"
+     inkscape:snap-grids="false"
+     inkscape:snap-global="true"
+     inkscape:window-width="1366"
+     inkscape:window-height="739"
+     inkscape:window-x="1360"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1">
+    <sodipodi:guide
+       position="0,0"
+       orientation="0,50.790819"
+       id="guide818"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="13.438404,0"
+       orientation="-50.790822,0"
+       id="guide820"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="13.438404,13.438405"
+       orientation="0,-50.790819"
+       id="guide822"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="0,13.438405"
+       orientation="50.790822,0"
+       id="guide824"
+       inkscape:locked="false" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata2041">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Camada 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(15.631483,-94.635015)">
+    <path
+       style="fill:#ffffff;stroke-width:0.26458329"
+       inkscape:connector-curvature="0"
+       id="path857"
+       d="M -3.5369129,94.635015 H -14.287641 c -0.73911,0 -1.343842,0.604729 -1.343842,1.343841 v 10.750724 c 0,0.73911 0.604732,1.34384 1.343842,1.34384 h 10.7507281 c 0.7391086,0 1.343834,-0.60473 1.343834,-1.34384 V 95.978856 c 0,-0.739112 -0.6047254,-1.343841 -1.343834,-1.343841 z m -5.3753669,4.031522 c 1.4782265,0 2.6876854,1.209457 2.6876854,2.687683 0,1.47823 -1.2094589,2.68767 -2.6876854,2.68767 -1.4782222,0 -2.6876792,-1.20944 -2.6876792,-2.68767 0,-1.478226 1.209457,-2.687683 2.6876792,-2.687683 z m -5.0393992,8.063043 c -0.201576,0 -0.335962,-0.13432 -0.335962,-0.33597 v -5.7113 h 1.411032 c -0.06719,0.20155 -0.06719,0.47034 -0.06719,0.67191 0,2.21733 1.814182,4.03152 4.0315201,4.03152 2.217339,0 4.0315247,-1.81419 4.0315247,-4.03152 0,-0.20157 0,-0.47036 -0.067203,-0.67191 h 1.411039 v 5.7113 c 0,0.20159 -0.134386,0.33597 -0.3359592,0.33597 z m 10.4147661,-9.070922 c 0,0.201575 -0.134386,0.335957 -0.3359592,0.335957 h -1.3438434 c -0.2015746,0 -0.3359605,-0.134382 -0.3359605,-0.335957 v -1.343843 c 0,-0.201575 0.134386,-0.335959 0.3359605,-0.335959 h 1.3438434 c 0.2015734,0 0.3359592,0.134383 0.3359592,0.335959 z" />
+  </g>
+</svg>

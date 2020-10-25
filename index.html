@@ -1,59 +1,402 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Principal</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="#211D2B">
+    <link href="https://fonts.googleapis.com/css?family=Alata|Open+Sans&display=swap" rel="stylesheet">
+    <title>Portfolio - Alex Moreira</title>
     <style>
         *{
-            margin: 0; padding: 0; border: 0; outline: 0; box-sizing: border-box; background-color: none;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html{
+            scroll-behavior: smooth;
         }
         body{
-            background-color: #212121; max-width: 320px; min-height: 100vh; margin: 0 auto; display: flex; flex-direction: column; justify-content: space-around; align-items: center;
+            background-image: linear-gradient(45deg, #211D2B, rgb(42, 42, 61));
         }
-        h1{
-            background-color:#ccc; display: flex; justify-content: center; align-items: center; padding: 10px; border-radius: 10px; text-align: center; font-family: Arial, Helvetica, sans-serif;
+        .container{
+            display: flex;
+            flex-direction: row;
         }
-        h1 a{
-            color: #212121;display: flex;justify-content: center;align-items: center; text-decoration: none;
+        .h1{
+            color: rgb(252, 180, 48);
+            text-transform: uppercase;
+            font-size: 0.9em;
+            font-family: 'Alata', sans-serif;
+            text-align: center;
+            padding: 1em 0;
+            background-image: linear-gradient(45deg, #303942, #252F46);
         }
-        .div01{
-            display: flex;justify-content: center;width: 100%; padding: 10px";
+        .h2{
+            color: rgb(252, 180, 48);
+            font-family: 'Alata', sans-serif;
+            font-size: 1.2em;
+            font-weight: 100;
+            padding: 0.5em 0;
+            width: 100%;
+            text-align: center;
+            background-color: rgba(255,255,255, .25);
+            position: sticky;
+            bottom: 0.01em;
         }
-        .div01 img{
-            width: 200px; border-radius: 10px; box-shadow: 5px 5px 4px #212121;
+        .all--info{
+            flex: 5;
+            padding: 1em;
+            overflow: hidden;
         }
-        hr{
-            background-color:red;
+        .all--info h6{
+            font-size: 1.5em;
+            font-family: 'Alata', sans-serif;
+            color: #fff;
         }
-        h4{
-            font-family: monospace; font-weight: 100;text-align: center;color: #fff;
+        .all--info p{
+            color: #fff;
+            font-family: 'Open Sans', sans-serif;
+            line-height: 1.5em;
         }
-        .div02{
-            border-radius: 10px;padding: 5px;border: 3px solid #fff;display: flex; align-items: center; justify-content: space-around;
+        .home{
+            background-color: transparent;
+            width: 100%;
+            height: auto;
+            padding: 3em 0;
+            margin-bottom: 0.5em;
         }
-        .div02 li{
-            text-transform: uppercase; list-style: none; font-size: 20px; font-weight: bolder;color: #fff; font-family: Arial, Helvetica, sans-serif;    
+        .home form{
+            padding: 3em 0;}
+        .home h6{
+            color: #fff;
+            font-family: 'Alata', sans-serif;
         }
+        .home p{
+          font-size: 1em;
+          letter-spacing: 0.05em;
+          text-align: left;
+          line-height: 2.5em;
+          padding-top: 1em;
+        }
+        .skills,
+        .partners,
+        .contact{
+            width: 100%;
+            height: 100vh;
+            padding: 3em 0.5em;
+            margin-bottom: 0.5em;
+            background-image: linear-gradient(45deg, rgb(50, 44, 65), rgb(51, 51, 63));
+        }
+        .skills{
+            height: auto;
+        }
+        .contact img{
+            width: 2.5em;
+            padding: 0.25em;
+        }
+        .partners p{
+            font-family: 'Open Sans', sans-serif;
+            line-height: 2.5em;
+            font-size: 1em;
+            padding-top: 1em;
+        }
+        .menu--desktop{
+            position: sticky;
+            top: 0;
+            flex: 1;
+            background-color: transparent;
+            width: 25%;
+            height: 100vh;
+            overflow: auto;
+        }
+        .menu--desktop li{
+            display: flex;
+            align-items: center;
+            padding-left: 0.25em;
+        }
+        .menu--desktop img{
+            width: 1em;
+            background-color: rgb(252, 180, 48);
+            padding: 0.15em;
+        }
+        .menu--desktop .img--logo{
+            width: 7.5em;
+            height: 7.5em;
+            background-image: url('imagens/minha_logo_3D.png');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            border-radius: 50%;
+            margin: 0 auto;
+            transition: ease-in-out 1500ms all;
+        }
+        .menu--desktop .img--logo:hover{
+            transform: rotateY(360deg);
+        }
+        .menu--desktop a{
+            color: rgb(252, 180, 48);
+            text-decoration: none;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 1.05em;
+            display: block;
+            padding: 1em 0 1em 0.5em;
+            transition: ease-in-out 300ms all;
+        }
+        .menu--desktop a:hover{
+            color: #ccc;
+            padding-left: 1em;(50, 44, 65), rgb(51, 51, 63));
+            border-top-right-radius: 0.5em;
+            border-bottom-right-radius: 0.5em;
+        }
+        .btn--mobile{
+            display: none;
+            position: fixed;
+            top: 0;
+            right: 0;
+            border: none;
+            color: #212121;
+            background-color: gold;
+            padding: 0.5em 2em;
+            border-radius: 0.25em;
+            cursor: pointer;
+        }
+        .menu--mobile{
+            min-width: 320px;
+            position: fixed;
+            top: 0;
+            right: 0;
+            transform: translateX(100%);
+            transition: ease-in-out 300ms all;
+            background-image: linear-gradient(45deg, rgb(50, 44, 65), rgb(51, 51, 63));
+        }
+        .menu--mobile li{
+            border-bottom: 0.01em solid #fff;
+            display: block;
+        }
+        .menu--mobile a{
+            color: #fff;
+            font-family: 'Open Sans', sans-serif;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-family: sans-serif;
+            font-size: 0.8em;
+            font-weight: bolder;
+            display: block;
+            padding: 1em 0 1em 0.5em;
+            transition: ease-in-out 300ms all;
+        }
+        .menu--mobile a:hover{
+            background-image: linear-gradient(45deg, rgb(50, 44, 65), rgb(51, 51, 63));
+            color: rgb(161, 161, 161);
+            padding-left: 1em;
+        }
+        .btn--mobile--close{
+            border: none;
+            color: #212121;
+            background-color: gold;
+            padding: 0.5em 2em;
+            border-radius: 0.25em;
+        }
+        form{
+            padding: 0.5em;
+        }
+        form p{
+            padding: 0.5em 0;
+        }
+        form label{
+            color: gold;
+            font-family: 'Alata', sans-serif;
+        }
+        form input[type="text"]{
+            border: none;
+            background-color: #fff;
+            padding: 0.5em;
+            height: 2em;
+            color: #fff;
+            font-family: 'Open Sans', sans-serif;
+        }
+        form textarea{
+            border: none;
+            background-color: #fff;
+            padding: 0.5em;
+            color: #fff;
+            font-family: 'Open Sans', sans-serif;
+        }
+        form input[type="submit"]{
+            background-color: gold;
+            color: #212121;
+            border: none;
+            padding: 0.25em 1em;
+            border-radius: 0.25em;
+        }
+        .about--content{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-flow: row wrap;
+        }
+        .about--content--card{
+            width: 320px;
+            max-width: 320px;
+            height: 400px;
+            margin: 0.5em;
+            padding: 0.5em;
+            border-radius: 1em;
+            transition: ease-in-out 500ms all;
+        }
+        .about--content--card:hover{
+            transform: scale(1.05);
+        }
+        .img--colab--01{
+          background-image: url('imagens/HTML.svg');
+        }
+        .img--colab--02{
+          background-image: url('imagens/CSS.svg');
+        }
+        .img--colab--03{
+          background-image: url('imagens/JAVASCRIPT.svg');
+        }
+        .img--colab{
+          width: 100%;
+          height: 70%;
+          background-color: transparent;
+          background-position: center;
+          background-size: 50%;
+          background-repeat: no-repeat;
+        }
+        .colab--01--dates,
+        .colab--02--dates,
+        .colab--03--dates{
+          width: 100%;
+          height: 30%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          border-radius: 50px;
+        }
+        .colab--name,
+        .colab--func,
+        .colab--pnumber,
+        .colab--email{
+          font-family: 'Open Sans', sans-serif;
+          color: #fff;
+        }
+        @media screen and (max-width: 810px) and (min-width: 100px) {
+            .menu--desktop{
+                display: none;
+            }
+            .btn--mobile{
+                display: block;
+            }
+        }
+        /* @media screen and (width: 811px){
+            .btn--mobile{
+                display: block;
+            }
+        } */
+
+        /* font-family: 'Alata', sans-serif;
+        font-family: 'Open Sans', sans-serif; */
+
+
     </style>
 </head>
-<html>
 <body>
-    <h1>
-        <a href="">Alexander Xavier Moreira</a>
-    </h1>
-    <div class="div01">
-        <img src="https://cdn.pixabay.com/photo/2018/09/08/22/37/software-3663509_960_720.jpg" alt="Imagem Gratuita - Web Developer">
-    </div>
-    <hr>
-    <h4>Estudo de Desenvolvimeto Web</h4>
-    <div class="div02">
-        <li>html</li>
-        <li>css</li>
-        <li>javascript</li>
-        <li>php</li>
-    </div>
-</br>
-</br>
+    <button onclick="openSlide()" class="btn--mobile">open</button>
+    <nav id="mobile" class="menu--mobile">
+        <ul>
+            <button onclick="closeSlide()" class="btn--mobile--close">close</button>
+            <li><a href="#">home</a></li>
+            <li><a href="#skillsInfo">skills</a></li>
+            <li><a href="#partnersInfo">partners</a></li>
+            <li><a href="#contactInfo">social media</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <nav class="menu--desktop">
+            <ul>
+                <h1 class="h1">Alex Moreira</h1>
+                <div class="img--logo"></div>
+                <li><img src="imagens/home.svg" alt=""><a href="#">home</a></li>
+                <li><img src="imagens/skills.svg" alt=""><a href="#skillsInfo">kills</a></li>
+                <li><img src="imagens/partners.svg" alt=""><a href="#partnersInfo">partners</a></li>
+                <li><img src="imagens/social_media.svg" alt=""><a href="#contactInfo">social media</a></li>
+            </ul>
+        </nav>
+        <section class="all--info">
+            <div id="home" class="home">
+                <h6>Who we are</h6>
+                <p>Constant students of the art of creating interfaces for websites, portals, blogs and landing pages. We are dedicated to giving the best experience to your current or future business partner.</p>
+                <form action="">
+                    <p><label for="">CONTACT US:</label></p>
+                    <p><label for="">Name</label></p>
+                    <p><input type="text" required placeholder="your name"></p>
+                    <p><label for="">Message</label></p>
+                    <p><textarea name="" id="" cols="30"  rows="10" required placeholder="your message"></textarea></p>
+                    <p><input type="submit" value="Submit"></p>
+                </form>
+            </div>
+            <div id="skillsInfo" class="about">
+                <h6>Skills</h6>
+                <div class="about--content">
+                    <div class="about--content--card about--content--card--01">
+                      <div class="img--colab img--colab--01"></div>
+                      <div class="colab--01--dates">
+                        <div class="colab--name colab--01--name">HTML5</div>
+                        <div class="colab--func colab--01--func">Markup Language</div>
+                        <div class="colab--pnumber colab--01--pnumber">We use the </div>
+                        <div class="colab--email colab--01--email">latest specifications.</div>
+                      </div>
+                    </div>
+                    <div class="about--content--card about--content--card--02">
+                      <div class="img--colab img--colab--02"></div>
+                      <div class="colab--02--dates">
+                        <div class="colab--name colab--02--name">CSS 3</div>
+                        <div class="colab--func colab--02--func">Style Language</div>
+                        <div class="colab--pnumber colab--02--pnumber">We use more than</div>
+                        <div class="colab--email colab--02--email">basic styling</div>
+                      </div>
+                    </div>
+                    <div class="about--content--card about--content--card--03">
+                      <div class="img--colab img--colab--03"></div>
+                      <div class="colab--03--dates">
+                        <div class="colab--name colab--03--name">Java Script</div>
+                        <div class="colab--func colab--03--func">Front End Language</div>
+                        <div class="colab--pnumber colab--03--pnumber">The Latest</div>
+                        <div class="colab--email colab--03--email">ECMAScript Specifications</div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div id="partnersInfo" class="partners">
+                <h6>Partners</h6>
+                <p>More than simply being our customer we will always be reaffirming our partnership, not only in ordering, developing, completing, and delivering, but also in need of further updates.</p>
+            </div>
+            <div id="contactInfo" class="contact">
+                <h6>Social Media</h6>
+                <img src="imagens/instagram.svg" alt="">
+                <img src="imagens/facebook_1.svg" alt="">
+            </div>
+            <h2 class="h2">AM Fitter&copy;2019</h2>
+        </section>
+
+    </main>
+
+    <script>
+
+        function openSlide(){
+            let abrir = window.document.getElementById('mobile');
+            abrir.style.transform = 'translateX(50%)'
+        }
+        function closeSlide(){
+            let fechar = window.document.getElementById('mobile');
+            fechar.style.transform = 'translateX(100%)'
+        }
+
+    </script>
+
 </body>
 </html>
