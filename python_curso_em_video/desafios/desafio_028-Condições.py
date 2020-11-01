@@ -1,6 +1,20 @@
-advinha = int(input('Diga um número entre "0" e "5": '))
-if advinha <= 5:
-    print('Você disse {} e acertou. Parabéns!!!'.format(advinha))
+print('\nSorteio um número definido pelo póprio programa.')
+
+from random import randint
+from time import sleep
+
+# sorteio = random.randrange(0, 5)
+sorteio = randint(0, 5)
+
+numero = int(input('\nDiga um número entre "0" e "5": '))
+
+print('\nPENSANDO.....\n')
+sleep(3)
+
+if sorteio == numero:
+    print('=> O número está correto.')
 else:
-    print('Você errou. Tente outra vez.')
-    
+    print('=> O número está incorreto. Tente outra vez.')
+
+
+

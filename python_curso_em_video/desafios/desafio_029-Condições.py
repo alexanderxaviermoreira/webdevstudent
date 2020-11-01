@@ -1,4 +1,5 @@
-print('\n')
+print('\nMulta por execesso de velocidade.\n')
+
 velocidade = float(input('O radar informou sua velocidade: '))
 excesso = velocidade - 80
 multaMinima = 7.00
