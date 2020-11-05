@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            width: 100%;
+            height: 100vh;
+            background-image: linear-gradient(-45deg, #6b0080, gold 60%, tomato);
+        }
+        main{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        main img{
+            width: 250px;
+            height: 250px;
+            cursor: pointer;
+            filter: grayscale(50%);
+            border-radius: 30px;
+            transition: ease-in-out 300ms all;
+        }
+        main img:hover{
+            filter: initial;
+            transform: scale(.95);
+            box-shadow: 5px 5px 10px #000;
+        }
+        .duble{
+            animation: animacao 10s ease-in-out alternate infinite;
+        }
+        @keyframes animacao {
+            0%{
+                transform: scale(.95);
+            }
+            50%{
+                transform: scale(1.25);
+            }
+            75%{
+                transform: scale(.55);
+            }
+            100%{
+                transform: scale(.95);
+            }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <img class="duble" src="imagens/24anos.png" alt="">
+    </main>
+</body>
+</html>
