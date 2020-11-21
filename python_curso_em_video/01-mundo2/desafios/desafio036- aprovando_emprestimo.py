@@ -1,12 +1,8 @@
-print('''
-Escreva um programa para aprovar o empréstimo bancário para a compra de uma casa.
-- O programa vai perguntar:
-1 - o valor da casa,
-2 - o salário do comprador e
-3 - em quantos anos ele vai pagar.
-
+'''
+Escreva um programa para aprovar o empréstimo bancário para a compra de uma casa. - O programa vai perguntar:
+1 - o valor da casa, 2 - o salário do comprador e 3 - em quantos anos ele vai pagar.
 Calcule o valor da prestação mensal, sabendo que ela não pode exceder 30% do salário ou então o empréstimo será negado.
-''')
+'''
 
 valorCasa = float(input('\nQual o valor do imóvel: '))
 salario = float(input('Qual o seu salário? '))
